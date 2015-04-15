@@ -28,11 +28,11 @@ var Ball = function(point, vector) {
 				radius: radius
 			}),
 			new Path.Circle({
-				center: radius / 8,
-				radius: radius / 3
+				center: radius / 3,
+				radius: radius / 2
 			})
 		],
-		fillColor: new Color(gradient, 0, radius, radius / 8),
+		fillColor: new Color(gradient, 0, radius, radius / 3),
 	});
 
 	this.item = new Group({
@@ -62,7 +62,7 @@ Ball.prototype.iterate = function() {
 
 
 var balls = [];
-for (var i = 0; i < 10; i++) {
+for (var i = 0; i < 1; i++) {
 	var position = Point.random() * view.size,
 		vector = (Point.random() - [0.5, 0]) * [50, 100],
 		ball = new Ball(position, vector);
