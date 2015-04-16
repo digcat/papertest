@@ -15,7 +15,7 @@ xmlhttp.send();
 }
 function myFunction()
 {
-loadXMLDoc("ajax_info.txt",function()
+loadXMLDoc("https://docs.digcat.com/alfresco/s/api/server",function()
   {
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
