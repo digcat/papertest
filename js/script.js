@@ -39,7 +39,7 @@ angular
     // Then populate the list with 100 shapes randomized in position
     // and color
     $scope.shapes = [];
-    for (i = 0; i < 100; i++) {
+    for (i = 0; i < 1; i++) {
         $scope.shapes.push(buildShape());
     }
 
